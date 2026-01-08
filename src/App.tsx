@@ -98,7 +98,7 @@ class APIClient {
 }
 
 // Configuración del cliente API
-const api = new APIClient("http://localhost:8000")
+const api = new APIClient(import.meta.env.VITE_SERVER_URL)
 
 // Servicios de Excel API
 const excelAPI = {
