@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FileSpreadsheet, Sparkles, Download, ArrowRight } from "lucide-react"
+import { FileSpreadsheet, Download, ArrowRight } from "lucide-react"
 
 // Types
 interface APIConfig {
@@ -200,7 +200,7 @@ export default function SheetGenPage() {
                     placeholder="Create a sales tracker with columns for date, product, quantity, and price..."
                     value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
-                    className="w-full min-h-[140px] resize-none text-base border border-[#2a2c3c] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/50 rounded-lg px-4 py-3.5 bg-[#1a1c2c] text-white placeholder:text-gray-500 shadow-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full min-h-35 resize-none text-base border border-[#2a2c3c] focus:border-[#4f46e5] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/50 rounded-lg px-4 py-3.5 bg-[#1a1c2c] text-white placeholder:text-gray-500 shadow-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={isGenerating}
                   />
                 </div>
@@ -315,7 +315,7 @@ export default function SheetGenPage() {
                 )}
 
                 <div className="mt-6 p-4 rounded-xl bg-[#2a2c3c]/50 border border-[#2a2c3c] flex items-center gap-3 shadow-sm">
-                  <div className="w-10 h-10 rounded-lg bg-green-700/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-green-700/20 flex items-center justify-center shrink-0">
                     <FileSpreadsheet className="w-5 h-5 text-green-500" />
                   </div>
                   <div className="flex-1 min-w-0">
